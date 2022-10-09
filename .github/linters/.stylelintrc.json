@@ -2,6 +2,7 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "no-missing-end-of-source-newline": null,
-    "max-line-length": null
+    "max-line-length": null,
+    "color-hex-length ": null
   }
 }
