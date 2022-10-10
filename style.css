@@ -6,7 +6,6 @@ body {
 
 body {
   margin: 0;
-  background-color: whitesmoke;
   justify-content: space-between;
 }
 
@@ -28,8 +27,6 @@ p {
   text-align: center;
   display: inline-block;
   position: relative;
-  color: #000000;
-  border: 1px solid black;
   padding: 8px 12px;
   margin: 5px;
 }
@@ -66,7 +63,6 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #000000;
   padding: 5px;
   align-self: flex-end;
 }
@@ -98,5 +94,35 @@ footer div {
     font-size: large;
     padding: 10px 20px;
     margin: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #232B32;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  .button {
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  footer a {
+    color: black;
+  }
+
+  .button {
+    color: #000000;
+    border: 1px solid black;
   }
 }
