@@ -9,6 +9,14 @@ body {
   justify-content: space-between;
 }
 
+rect {
+  opacity: 0;
+}
+
+.inbug {
+  fill-rule: evenodd;
+}
+
 p {
   font-weight: 600;
   font-size: 16px;
@@ -22,11 +30,6 @@ p {
 }
 
 .button {
-  text-decoration: none;
-  font-size: small;
-  text-align: center;
-  display: inline-block;
-  position: relative;
   padding: 8px 12px;
   margin: 5px;
 }
@@ -89,26 +92,15 @@ footer div {
   }
 }
 
-@media screen and (min-width: 500px) {
-  .button {
-    font-size: large;
-    padding: 10px 20px;
-    margin: 10px;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #232B32;
   }
 
-  footer a {
+  footer a,
+  svg path {
     color: white;
-  }
-
-  .button {
-    color: white;
-    border: 1px solid white;
+    fill: white;
   }
 }
 
@@ -119,10 +111,5 @@ footer div {
 
   footer a {
     color: black;
-  }
-
-  .button {
-    color: #000000;
-    border: 1px solid black;
   }
 }
