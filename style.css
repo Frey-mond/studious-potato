@@ -9,10 +9,6 @@ body {
   justify-content: space-between;
 }
 
-rect {
-  opacity: 0;
-}
-
 .inbug {
   fill-rule: evenodd;
 }
@@ -32,6 +28,19 @@ p {
 .button-link {
   padding: 8px 12px;
   margin: 5px;
+}
+
+path,
+ellipse,
+rect {
+  transition: ease-in;
+  transition-duration: 175ms;
+}
+
+svg:hover path,
+svg:hover ellipse,
+svg:hover rect {
+  filter: invert(100%);
 }
 
 .flex {
@@ -66,10 +75,10 @@ footer {
 
 footer a {
   text-decoration: none;
-  padding: 5px;
   align-self: flex-end;
 }
 
+footer a,
 footer div {
   padding: 5px;
 }
@@ -83,10 +92,7 @@ footer div {
     font-size: large;
   }
 
-  footer a {
-    padding: 10px;
-  }
-
+  footer a,
   footer div {
     padding: 10px;
   }
@@ -94,22 +100,34 @@ footer div {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #232B32;
+    background-color: #111111;
+  }
+
+  ellipse,
+  rect {
+    fill: #111111;
   }
 
   footer a,
-  svg path {
-    color: white;
-    fill: white;
+  path {
+    color: #eeeeee;
+    fill: #eeeeee;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: whitesmoke;
+    background-color: #eeeeee;
   }
 
-  footer a {
-    color: black;
+  ellipse,
+  rect {
+    fill: #eeeeee;
+  }
+
+  footer a,
+  path {
+    color: #111111;
+    fill: #111111;
   }
 }
