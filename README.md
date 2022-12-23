@@ -1,1 +1,3 @@
-A basic personal website. It's nothing fancy but it gets the job done. Hosted on Cloudflare Pages.
+A static personal website. Nothing fancy but it gets the job done.
+
+Hosted on Cloudflare Pages.
